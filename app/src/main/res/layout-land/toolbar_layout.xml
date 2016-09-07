@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="?attr/actionBarSize"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="?attr/colorPrimaryDark"
+    app:popupTheme="@style/AppTheme.PopupOverlay">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/id_action_nav"
+            style="@style/Widget.AppCompat.ActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="start"
+            android:src="@drawable/ic_action_hambuger" />
+
+        <ImageButton
+            android:id="@+id/id_action_back"
+            style="@style/Widget.AppCompat.ActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_action_nav"
+            android:layout_gravity="start"
+            android:src="@drawable/ic_action_back" />
+
+        <ImageButton
+            android:id="@+id/id_action_fb"
+            style="@style/Widget.AppCompat.ActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_action_back"
+            android:layout_gravity="start"
+            android:src="@drawable/ic_action_facebook" />
+
+        <ImageButton
+            android:id="@+id/id_action_inst"
+            style="@style/Widget.AppCompat.ActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/id_action_yt"
+            android:layout_alignRight="@+id/id_action_yt"
+            android:layout_below="@id/id_action_fb"
+            android:layout_gravity="start"
+            android:src="@drawable/ic_action_insta" />
+
+        <ImageButton
+            android:id="@+id/id_action_yt"
+            style="@style/Widget.AppCompat.ActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_action_inst"
+            android:src="@drawable/ic_action_youtube" />
+
+        <ImageButton
+            android:id="@+id/id_action_inf"
+            style="@style/Widget.AppCompat.ActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="bottom"
+            android:src="@drawable/ic_action_info" />
+    </RelativeLayout>
+</LinearLayout>

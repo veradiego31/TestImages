@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayout">
+
+
+    <fr.castorflex.android.verticalviewpager.VerticalViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </fr.castorflex.android.verticalviewpager.VerticalViewPager>
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgDownPage"
+        android:src="@drawable/down_pager"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="centerInside"/>
+
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgUpPage"
+        android:src="@drawable/up_pager"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/imgDownPage"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="centerInside"/>
+
+</RelativeLayout>

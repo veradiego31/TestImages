@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_02"
+            android:title="@string/performance"
+            />
+        <item
+            android:id="@+id/nav_03"
+            android:title="@string/disenho_interior" />
+        <item
+            android:id="@+id/nav_04"
+            android:title="@string/disenho_exterior" />
+        <item
+            android:id="@+id/nav_05"
+            android:title="@string/confort" />
+        <item
+            android:id="@+id/nav_06"
+            android:title="@string/tecnologia" />
+        <item
+            android:id="@+id/nav_07"
+            android:title="@string/seguridad" />
+        <item
+            android:id="@+id/nav_08"
+            android:title="@string/accesorios" />
+        <item
+            android:id="@+id/nav_09"
+            android:title="@string/ficha_tecnica" />
+        <item
+            android:id="@+id/nav_10"
+            android:title="@string/manejalo" />
+        <item
+            android:id="@+id/nav_11"
+            android:title="@string/t_p_a" />
+        <item
+            android:id="@+id/nav_12"
+            android:title="@string/legales" />
+    </group>
+
+
+
+</menu>

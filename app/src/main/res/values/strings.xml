@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Test Images</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="etios_2016">Etios 2016</string>
+    <string name="performance">PLAYAS</string>
+    <string name="disenho_interior">MONTAÑAS</string>
+    <string name="disenho_exterior">AGUA</string>
+    <string name="confort">ANIMALES</string>
+    <string name="tecnologia">FRUTAS</string>
+    <string name="seguridad">TECNOLOGIA</string>
+    <string name="accesorios">FLORES</string>
+    <string name="ficha_tecnica">SOL</string>
+    <string name="manejalo">JUGUETES</string>
+    <string name="t_p_a">AUTOS</string>
+    <string name="legales">CAMPO</string>
+
+    <string-array name="item_nav">
+        <item>HOME</item>
+        <item>PLAYA</item>
+        <item>MONTAÑAS</item>
+        <item>AGUA</item>
+        <item>ANIMALES</item>
+        <item>FRUTAS</item>
+        <item>TECNOLOGIA</item>
+        <item>FLORES</item>
+        <item>SOL</item>
+        <item>JUGUETES</item>
+        <item>AUTOS</item>
+        <item>CAMPO</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="instagram_button">instagram button</string>
+    <string name="test_drive">ACCION X</string>
+</resources>
