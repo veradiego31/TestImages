@@ -6,23 +6,24 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
 import io.sirio.testimages.R;
-
+import io.sirio.testimages.models.Images;
 
 
 public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
 
-    private ArrayList<Integer> imagenes;
+    private ArrayList<Images> imagenes;
     private int itemLayout;
     private Context mContext;
     OnItemClickListener mItemClickListener;
 
-    public HomeAdapter(ArrayList<Integer> imagenes, int itemLayout, Context mContext){
+    public HomeAdapter(ArrayList<Images> imagenes, int itemLayout, Context mContext){
 
         this.imagenes = imagenes;
         this.itemLayout = itemLayout;
@@ -38,8 +39,10 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
 
-        int image = imagenes.get(position);
+        int image = imagenes.get(position).getResource();
         Glide.with(mContext).load(image).into(holder.imgHome);
+        holder.textView.setText(imagenes.get(position).getName());
+
     }
 
     @Override
@@ -50,12 +53,15 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
     public class ViewHolder extends RecyclerView.ViewHolder{
 
         public ImageView imgHome;
+        public TextView textView;
 
 
         public ViewHolder(View itemView) {
             super(itemView);
 
             imgHome = (ImageView) itemView.findViewById(R.id.row_imageview);
+            textView = (TextView) itemView.findViewById(R.id.row_text);
+
             imgHome.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

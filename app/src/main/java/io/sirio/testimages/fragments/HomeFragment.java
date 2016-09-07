@@ -18,6 +18,7 @@ import java.util.ArrayList;
 
 import io.sirio.testimages.R;
 import io.sirio.testimages.adapters.HomeAdapter;
+import io.sirio.testimages.models.Images;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -43,18 +44,10 @@ public class HomeFragment extends Fragment implements HomeAdapter.OnItemClickLis
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        ArrayList<Integer> imagenesHome = new ArrayList<>();
 
-        imagenesHome.add(R.drawable.home01_performance);
-        imagenesHome.add(R.drawable.home02_exterior);
-        imagenesHome.add(R.drawable.home03_interior);
-        imagenesHome.add(R.drawable.home04_confort);
-        imagenesHome.add(R.drawable.home05_tecnologia);
-        imagenesHome.add(R.drawable.home06_seguridad);
-        imagenesHome.add(R.drawable.home07_accesorios);
-        imagenesHome.add(R.drawable.home08_ficha);
-        imagenesHome.add(R.drawable.home09_tpa);
-        imagenesHome.add(R.drawable.home10_manejalo);
+        ArrayList<Images> imagenesHome = new ArrayList<>();
+
+        imagenesHome = setDataImages();
 
         RecyclerView recyclerView = (RecyclerView) getActivity().findViewById(R.id.my_recycler_view_home);
         recyclerView.setHasFixedSize(true);
@@ -63,6 +56,65 @@ public class HomeFragment extends Fragment implements HomeAdapter.OnItemClickLis
         recyclerView.setAdapter(homeAdapter);
         recyclerView.setLayoutManager(new GridLayoutManager(getActivity(),2, GridLayoutManager.VERTICAL, false));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
+
+
+    }
+
+    private ArrayList<Images> setDataImages() {
+        ArrayList<Images> data = new ArrayList<>();
+
+        Images img1 = new Images();
+        img1.setResource(R.drawable.home01_performance);
+        img1.setName(getResources().getString(R.string.performance));
+        data.add(img1);
+
+        Images img2 = new Images();
+        img2.setResource(R.drawable.home02_exterior);
+        img2.setName(getResources().getString(R.string.disenho_exterior));
+        data.add(img2);
+
+        Images img3 = new Images();
+        img3.setResource(R.drawable.home03_interior);
+        img3.setName(getResources().getString(R.string.disenho_interior));
+        data.add(img3);
+
+        Images img4 = new Images();
+        img4.setResource(R.drawable.home04_confort);
+        img4.setName(getResources().getString(R.string.confort));
+        data.add(img4);
+
+        Images img5 = new Images();
+        img5.setResource(R.drawable.home05_tecnologia);
+        img5.setName(getResources().getString(R.string.tecnologia));
+        data.add(img5);
+
+        Images img6 = new Images();
+        img6.setResource(R.drawable.home06_seguridad);
+        img6.setName(getResources().getString(R.string.seguridad));
+        data.add(img6);
+
+        Images img7 = new Images();
+        img7.setResource(R.drawable.home07_accesorios);
+        img7.setName(getResources().getString(R.string.accesorios));
+        data.add(img7);
+
+        Images img8 = new Images();
+        img8.setResource(R.drawable.home08_ficha);
+        img8.setName(getResources().getString(R.string.ficha_tecnica));
+        data.add(img8);
+
+        Images img9 = new Images();
+        img9.setResource(R.drawable.home09_tpa);
+        img9.setName(getResources().getString(R.string.t_p_a));
+        data.add(img9);
+
+        Images img10 = new Images();
+        img10.setResource(R.drawable.home10_manejalo);
+        img10.setName(getResources().getString(R.string.manejalo));
+        data.add(img10);
+
+
+        return data;
 
 
     }
